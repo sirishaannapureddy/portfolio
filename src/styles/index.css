@@ -1,0 +1,144 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #1a1a2e;
+  color: #fff;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app main {
+  flex: 1;
+}
+
+a {
+  color: inherit;
+}
+
+body,
+#root {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #ff9a9e 50%, #8a2be2 50%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: 'Arial', sans-serif;
+}
+
+
+
+
+body {
+  cursor: none;
+}
+
+
+.cursor-ring {
+  width: 30px;
+  height: 30px;
+  border: 2px solid #ff0188;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events:none;
+  transform: translate(-50%, -50%);
+  transition: all 0.08s ease-out;
+  z-index: 9999;
+}
+
+
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #ff0188;
+  border-radius: 50%;
+  position:fixed;
+  pointer-events: none;
+  transform: translate(-80%, -80%);
+  z-index: 10000;
+}
+
+
+
+
+
+.footer-links {
+  text-align: left;
+}
+
+.footer-title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+
+  background: linear-gradient(90deg, #ff0188, #ffffff);
+
+  background-clip: text;              
+  -webkit-background-clip: text;     
+  
+  color: transparent;              
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+.footer-links li {
+  margin-bottom: 0.8rem;
+}
+
+
+.footer-links a {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 1rem;
+  font-weight: 500;
+  position: relative;
+  padding-left: 20px;
+  transition: all 0.3s ease;
+}
+
+
+.footer-links a::before {
+  content: "➜";
+  position: absolute;
+  left: 0;
+  color: #ff0188;
+  transition: transform 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+  transform: translateX(6px);
+  text-shadow: 0 0 8px #ff0188;
+}
+
+.footer-links a:hover::before {
+  transform: translateX(6px);
+}
+
+
+
+
+
