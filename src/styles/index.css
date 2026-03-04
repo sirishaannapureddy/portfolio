@@ -143,3 +143,113 @@ body {
   transition: background-color 0.3s, color 0.3s;
 } 
  
+
+/* ============================= */
+/*        GLOBAL RESPONSIVE      */
+/* ============================= */
+
+/* Smooth scaling text */
+html {
+  font-size: 16px;
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+/* Make all images responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Prevent content touching screen edges */
+section,
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* ============================= */
+/*        FOOTER RESPONSIVE      */
+/* ============================= */
+
+/* If footer has multiple columns */
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/* Smaller footer text on small screens */
+@media (max-width: 480px) {
+  .footer-title {
+    font-size: 1.1rem;
+  }
+
+  .footer-links a {
+    font-size: 0.9rem;
+  }
+}
+
+/* ============================= */
+/*        LAYOUT RESPONSIVE      */
+/* ============================= */
+
+/* Generic responsive flex layout */
+.flex-responsive {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Tablet & Desktop */
+@media (min-width: 768px) {
+  .flex-responsive {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+/* ============================= */
+/*        CUSTOM CURSOR FIX      */
+/* ============================= */
+
+/* Disable custom cursor on mobile */
+@media (max-width: 768px) {
+  body {
+    cursor: auto;
+  }
+
+  .cursor-ring,
+  .cursor-dot {
+    display: none;
+  }
+}
+
+/* ============================= */
+/*        SAFE WIDTH CONTROL     */
+/* ============================= */
+
+/* Prevent horizontal scroll */
+body {
+  overflow-x: hidden;
+}
+
+/* Utility container for sections */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
