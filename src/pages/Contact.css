@@ -94,6 +94,11 @@
 @media (max-width: 768px) {
   .contact-container {
     flex-direction: column;
+     min-height: auto;       
+    padding: 20px;  
+  }
+   .contact-right {
+    padding: 20px;
   }
 
   .row {

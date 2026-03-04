@@ -1,6 +1,6 @@
 .projects-page {
   background:black;
-  min-height: calc(100vh - 140px);
+  min-height: 100dvh;
   color: #1a1a2e;
   padding: 3rem 2rem 4rem;
 }

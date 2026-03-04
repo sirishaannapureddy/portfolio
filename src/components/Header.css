@@ -84,3 +84,17 @@
 .theme-toggle:hover {
   transform: rotate(25deg);
 }
+
+@media (max-width: 768px) {
+  .header {
+    padding: 15px 5%;
+  }
+
+  .header-nav {
+    gap: 15px;
+  }
+
+  .header-link {
+    font-size: 0.8rem;
+  }
+}

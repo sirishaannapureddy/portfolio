@@ -5,6 +5,8 @@
   padding: 40px 8%;
   background: linear-gradient(135deg, #0a0a1a, #140024, #1a0033);
   color: white;
+   
+  flex-wrap: wrap;
 }
 
 .home-left {
@@ -86,18 +88,18 @@ p {
 }
 
 .profile-container {
-  width: 320px;
-  height: 320px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   overflow: hidden;
 }
 
 .profile-container img {
   width: 100%;
-  height: 126%;
+  height: 100%;
   object-fit: cover;
+  object-position: 50% 32%;
 }
-
 @media (max-width: 900px) {
   .home {
     flex-direction: column;
@@ -111,10 +113,17 @@ p {
   h1 {
     font-size: 40px;
   }
+  .buttons {
+    flex-direction: column;   /* 🔥 important */
+    align-items: center;      /* 🔥 important */
+  }
 }
 
 .typing {
   color: #ff00aa;
   border-right: 2px solid #ff00aa;
   padding-right: 5px;
+}
+html, body {
+  overflow-x: hidden;
 }
