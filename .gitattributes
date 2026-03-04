@@ -1,0 +1,8 @@
+# Normalize all text files to use LF in repo, CRLF on Windows checkout
+* text=auto
+
+# Treat images and binaries as binary
+*.png binary
+*.jpg binary
+*.ico binary
+*.gif binary

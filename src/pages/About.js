@@ -54,7 +54,7 @@ function About() {
             <h2 className="about-name">Sirisha Annapureddy</h2>
             <p>
               Hello! I'm Sirisha Annapureddy, Full Stack Developer skilled in React, 
-              JavaScript, Python, and Django, with hands-on experience building secure
+              JavaScript, Python, Django, Html, and Css with hands-on experience building secure
                and scalable web applications. Passionate about creating efficient solutions 
                to real-world problems.
             </p>

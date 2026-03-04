@@ -1,6 +1,3 @@
-
-
-
 import React, { useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header';
@@ -60,7 +57,7 @@ function App() {
   return (
     <div className="app">
 
-      {/* Custom Cursor */}
+     
       <div className="cursor-ring"></div>
       <div className="cursor-dot"></div>
 
@@ -76,11 +73,11 @@ function App() {
         </Routes>
       </main>
       <Footer />
+      
+
     </div>
   );
 }
 
 export default App;
-
-
 

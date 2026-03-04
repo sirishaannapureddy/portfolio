@@ -4,14 +4,17 @@
   box-sizing: border-box;
 }
 
-body {
+ body {
   margin: 0;
-  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+  padding: 0;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #1a1a2e;
   color: #fff;
-}
+  cursor: none;
+} 
 
 #root {
   min-height: 100vh;
@@ -31,26 +34,8 @@ body {
 
 a {
   color: inherit;
+  text-decoration: none;
 }
-
-body,
-#root {
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(to right, #ff9a9e 50%, #8a2be2 50%);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  font-family: 'Arial', sans-serif;
-}
-
-
-
-
-body {
-  cursor: none;
-}
-
 
 .cursor-ring {
   width: 30px;
@@ -58,27 +43,22 @@ body {
   border: 2px solid #ff0188;
   border-radius: 50%;
   position: fixed;
-  pointer-events:none;
+  pointer-events: none;
   transform: translate(-50%, -50%);
   transition: all 0.08s ease-out;
   z-index: 9999;
 }
-
 
 .cursor-dot {
   width: 8px;
   height: 8px;
   background-color: #ff0188;
   border-radius: 50%;
-  position:fixed;
+  position: fixed;
   pointer-events: none;
   transform: translate(-80%, -80%);
   z-index: 10000;
 }
-
-
-
-
 
 .footer-links {
   text-align: left;
@@ -88,13 +68,10 @@ body {
   font-size: 1.4rem;
   font-weight: 700;
   margin-bottom: 1.2rem;
-
   background: linear-gradient(90deg, #ff0188, #ffffff);
-
-  background-clip: text;              
-  -webkit-background-clip: text;     
-  
-  color: transparent;              
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .footer-links ul {
@@ -103,14 +80,11 @@ body {
   margin: 0;
 }
 
-
 .footer-links li {
   margin-bottom: 0.8rem;
 }
 
-
 .footer-links a {
-  text-decoration: none;
   color: #ccc;
   font-size: 1rem;
   font-weight: 500;
@@ -118,7 +92,6 @@ body {
   padding-left: 20px;
   transition: all 0.3s ease;
 }
-
 
 .footer-links a::before {
   content: "➜";
@@ -140,5 +113,33 @@ body {
 
 
 
+:root {
+  --bg-color: #ffffff;      
+  --text-color: #111111;    
+  --primary-color: #ff0188; 
+}
 
+[data-theme="dark"] {
+  --bg-color: #1a1a2e;      
+  --text-color: #ffffff;    
+  --primary-color: #ff0188; 
+}
 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--bg-color); 
+  color: var(--text-color);          
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-color);
+  color: var(--text-color);         
+  transition: background-color 0.3s, color 0.3s;
+} 
+ 
