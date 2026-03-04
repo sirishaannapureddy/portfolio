@@ -114,8 +114,8 @@ p {
     font-size: 40px;
   }
   .buttons {
-    flex-direction: column;   /* 🔥 important */
-    align-items: center;      /* 🔥 important */
+    flex-direction: column;   
+    align-items: center;      
   }
 }
 
