@@ -1,127 +1,16 @@
 
-
-/* .footer {
-   background: linear-gradient(135deg, #0f0f1f, #1a1a2e); 
-
-  color: #fff;
-  padding: 1.5rem 8% 1.5rem;
-  margin-top: 0; 
-}
-
-.footer-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr;
-  gap: 2.5rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.footer-content > div {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer-title {
-  font-size: 1.4rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  background: linear-gradient(45deg, #ff00aa, #8a2be2);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-}
-
-.footer-desc {
-  color: rgba(255, 255, 255, 0.75);
-  line-height: 1.6;
-  font-size: 0.95rem;
-}
-
-.footer-links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer-links li {
-  margin-bottom: 0.8rem;
-}
-
-.footer-links a {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 0.95rem;
-  transition: all 0.3s ease;
-}
-
-.footer-links a:hover {
-  color: #ff00aa;
-  padding-left: 6px;
-}
-
-.footer-social {
-  display: flex;
-  gap: 15px;
-  margin-top: 10px;
-}
-
-.footer-social a {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  background: #1e1e3a;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  font-size: 18px;
-  text-decoration: none;
-  transition: all 0.4s ease;
-}
-
-.footer-social a:hover {
-  background: linear-gradient(45deg, #ff00aa, #8a2be2);
-  transform: translateY(-6px);
-  box-shadow: 0 10px 20px rgba(255, 0, 170, 0.4);
-}
-
-.footer-bottom {
-  text-align: center;
-  margin-top: 1rem;
-  font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-bottom span {
-  color: #ff00aa;
-  font-weight: 600;
-}
-
-@media (max-width: 900px) {
-  .footer-content {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .footer-social {
-    justify-content: center;
-  }
-} */
-
 .footer {
   width: 100%;
   background: linear-gradient(135deg, #0f0f1fc9, #1a1a2e);
   color: #fff;
 
-  /* full width */
+ 
   padding: 1.5rem 0;
 
   margin: 0;
 }
 
-/* centered content inside footer */
+
 
 .footer-content {
   max-width: 1200px;
