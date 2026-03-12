@@ -1,20 +1,15 @@
-import React, { useEffect } from 'react';
-import { Routes, Route, useLocation } from 'react-router-dom';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-import About from './pages/About';
-import Services from './pages/Services';
-import Projects from './pages/Projects';
-import Contact from './pages/Contact';
+import React, { useEffect } from "react";
+import { Routes, Route, useLocation } from "react-router-dom";
 
-// function ScrollToTop() {
-//   const { pathname } = useLocation();
-//   useEffect(() => {
-//     window.scrollTo(0, 0);
-//   }, [pathname]);
-//   return null;
-// }
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+
+import Home from "./pages/Home";
+import About from "./pages/About";
+import Services from "./pages/Services";
+import Projects from "./pages/Projects";
+import Contact from "./pages/Contact";
+
 function ScrollToTop() {
   const { pathname } = useLocation();
 
@@ -30,7 +25,6 @@ function ScrollToTop() {
 }
 
 function App() {
-
   useEffect(() => {
     const ring = document.querySelector(".cursor-ring");
     const dot = document.querySelector(".cursor-dot");
@@ -56,14 +50,14 @@ function App() {
 
   return (
     <div className="app">
-
-     
+      
+    
       <div className="cursor-ring"></div>
       <div className="cursor-dot"></div>
 
       <ScrollToTop />
       <Header />
-      <main>
+      <main className="main-content">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -73,11 +67,7 @@ function App() {
         </Routes>
       </main>
       <Footer />
-      
-
     </div>
   );
 }
-
 export default App;
-
