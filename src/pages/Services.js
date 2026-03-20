@@ -1,10 +1,9 @@
-
-
-
 import React from "react";
 import "./Services.css";
+import { MdDevices } from "react-icons/md";
 
 function Services() {
+
   const services = [
     {
       title: "Full Stack Web Development",
@@ -20,25 +19,30 @@ function Services() {
       title: "Backend Development",
       desc: "Developing secure backend systems, APIs, and database management using Python, Django, and MySQL.",
       icon: "🗄"
+    },
+    {
+      title: "Responsive UI Design",
+      desc: "Designing clean, modern, and visually appealing user interfaces for websites and web applications.",
+      icon: <MdDevices />
     }
   ];
 
   return (
     <div className="services-container">
-      {/* <h1 className="services-title">MY SERVICES</h1> */}
+
       <h1 className="about-title">
-            My{" "}
-            <span
-              style={{
-                background: "linear-gradient(45deg, #ff00aa, #8a2be2)",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-                fontWeight: "bold",
-              }}
-            >
-              Services
-            </span>
-          </h1>
+        My{" "}
+        <span
+          style={{
+            background: "linear-gradient(45deg, #ff00aa, #8a2be2)",
+            WebkitBackgroundClip: "text",
+            WebkitTextFillColor: "transparent",
+            fontWeight: "bold",
+          }}
+        >
+          Services
+        </span>
+      </h1>
 
       <div className="services-grid">
         {services.map((service, index) => (
@@ -49,6 +53,7 @@ function Services() {
           </div>
         ))}
       </div>
+
     </div>
   );
 }

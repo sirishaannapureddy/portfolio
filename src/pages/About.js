@@ -27,7 +27,7 @@ function About() {
   return (
     <div className="about-page">
       <section className="about-hero">
-        {/* <h1 className="about-title">About <span className="me">Me</span></h1> */}
+     
           <h1 className="about-title">
             About{" "}
             <span
@@ -84,7 +84,7 @@ function About() {
     ))}
   </div>
 
-  {/* Soft Skills */}
+
   <h2 className="skills-title soft-title">My Soft Skills</h2>
 
   <div className="skills-grid">

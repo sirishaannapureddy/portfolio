@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import "./Header.css";
 
 function Header() {
+
   const location = useLocation();
   const path = location.pathname;
 
@@ -28,7 +29,6 @@ function Header() {
         My Portfolio
       </Link>
 
-      {/* MENU ICON */}
       <div
         className="menu-icon"
         onClick={() => setMenuOpen(!menuOpen)}
@@ -36,14 +36,13 @@ function Header() {
         {menuOpen ? "✖" : "☰"}
       </div>
 
-      {/* NAVIGATION */}
       <nav className={`header-nav ${menuOpen ? "active" : ""}`}>
         {navLinks.map(({ to, label }) => (
           <Link
             key={to}
             to={to}
             className={`header-link ${
-              to === "/" ? path === "/" : path.startsWith(to) ? "active" : ""
+              path === to || path.startsWith(to + "/") ? "active" : ""
             }`}
             onClick={scrollTop}
           >
